@@ -17,7 +17,7 @@ def random_proxy():
         s = socks.socksocket()
         s.set_proxy(socks.HTTP, rip, rpp)
         socket.socket = socks.socksocket
-        urllib.request.urlopen
+        print(requests.get('http://httpbin.org/ip/').content
     except (IndexError, IndentationError):
         print('Not Working')
         
